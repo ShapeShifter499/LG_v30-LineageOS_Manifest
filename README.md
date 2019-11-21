@@ -48,7 +48,7 @@ $ repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
 ### Change directory to point to .repo   folder of the source directory.
 #### Make sure to point to the .repo folder inside of the build root location you choose earlier!
 $ mkdir -p ~/android/lineage/.repo/local_manifests  
-$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30.xml -O ~/android/lineage/.repo/local_manifests/lg_v30.xml
+$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30-h930-Stable.xml -O ~/android/lineage/.repo/local_manifests/lg_v30-h930-Stable.xml
 
 ### Now grab all the source files! Run at the root of the source directory.
 $ repo sync
