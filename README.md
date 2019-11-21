@@ -43,7 +43,8 @@ $ mkdir -p ~/android/lineage
 $ cd ~/android/lineage  
 $ repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
 
-### Now add the LG v30 manifest. Pick whether or not to use the stable manifest or not. Change directory to point to .repo   folder of the source directory.
+### Now add the LG v30 manifest. Pick whether or not to use the stable manifest or not. MAKE SURE TO USE THE CORRECT MANIFEST! H932 is a T-Mobile specific build. H930 is universal and will work for other LG v30. 
+### Change directory to point to .repo   folder of the source directory.
 #### Make sure to point to the .repo folder inside of the build root location you choose earlier!
 $ mkdir -p ~/android/lineage/.repo/local_manifests  
 $ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30.xml -O ~/android/lineage/.repo/local_manifests/lg_v30.xml
