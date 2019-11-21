@@ -21,7 +21,7 @@ sudo update-alternatives --config java
 
 sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python
 
-### This sets up correct udev rules in Ubuntu so the system can connect to Android devices via USB, ADB, Fastboot.  Replace "username" with system username
+### This sets up correct udev rules in Ubuntu so the system can connect to Android devices via USB, ADB, Fastboot.  Replace "username" with system username (Optional for build)
 ```
 $ wget -S -O - http://source.android.com/source/51-android.rules | sed "s/<username>/$USER/" | sudo tee >/dev/null /etc/udev/rules.d/51-android.rules; sudo udevadm control --reload-rules
 ```
@@ -74,7 +74,7 @@ export USE_CCACHE=1
 export CCACHE_COMPRESS=1
 
 #### Monitor CCACHE being used, run from root of source.
-$ watch -n1 -d prebuilts/misc/linux-x86/ccache/ccache -s
+$ watch -n1 -d ccache -s
 
 ### SuperSU Root
 Home builders that want to bake su back into the ROM can use the command ‘export WITH_SU=true’ prior to building.
