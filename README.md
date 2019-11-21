@@ -39,7 +39,8 @@ fi
 ```
 
 ### Create build directory and fetch the required LineageOS 16.0 source files. Make sure you replace the directory to the one you want to use for the source directory
-$ mkdir -p ~/android/lineage
+$ mkdir -p ~/android/lineage 
+
 $ cd ~/android/lineage  
 $ repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
 
