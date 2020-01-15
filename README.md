@@ -5,7 +5,7 @@ Manifest needed to help build LineageOS 16.0 for LG v30
 * README.md -- The self explanatory file you read now.
 * lg_v30-h932-Stable.xml -- Manifest for building from the last known working build of LineageOS 16.0 FOR T-MOBILE H932 VARIANT ONLY. Code is provided from their respective GitHub sources listed in the file.
 * lg_v30-h930-Stable.xml -- Manifest for building from the last known working build of LineageOS 16.0 UNIVERSAL BUILD EXECPT FOR T-MOBILE H932. Code is provided from their respective GitHub sources listed in the file.
-* lg_v30-h932.xml -- Manifest for building from my source edits UNIVERSAL BUILD EXCEPT FOR T-MOBILE H932.
+* lg_v30-h930.xml -- Manifest for building from my source edits UNIVERSAL BUILD EXCEPT FOR T-MOBILE H932.
 * lg_v30-h932.xml -- Manifest for building from my source edits FOR T-MOBILE VARIANT H932 ONLY.
 
 
