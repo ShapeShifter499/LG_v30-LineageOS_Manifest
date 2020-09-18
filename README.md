@@ -1,4 +1,4 @@
-# LG_v30-LineageOS_16.0_Manifest
+# LG_v30-LineageOS_17.1_Manifest
 Manifest needed to help build LineageOS 17.1 for LG v30
 
 # Files
@@ -35,7 +35,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 ```
 
-### Create build directory and fetch the required LineageOS 16.0 source files. Make sure you replace the directory to the one you want to use for the source directory
+### Create build directory and fetch the required LineageOS 17.1 source files. Make sure you replace the directory to the one you want to use for the source directory
 $ mkdir -p ~/android/lineage 
 
 $ cd ~/android/lineage  
@@ -45,7 +45,7 @@ $ repo init -u https://github.com/LineageOS/android.git -b lineage-17.1
 ### Change directory to point to .repo   folder of the source directory.
 #### Make sure to point to the .repo folder inside of the build root location you choose earlier!
 $ mkdir -p ~/android/lineage/.repo/local_manifests  
-$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30-joan.xml -O ~/android/lineage/.repo/local_manifests/lg_v30-joan.xml
+$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-17.1/lg_v30-joan.xml -O ~/android/lineage/.repo/local_manifests/lg_v30-joan.xml
 
 ### Now grab all the source files! Run at the root of the source directory.
 $ repo sync
