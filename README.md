@@ -1,12 +1,9 @@
 # LG_v30-LineageOS_16.0_Manifest
-Manifest needed to help build LineageOS 16.0 for LG v30
+Manifest needed to help build LineageOS 17.1 for LG v30
 
 # Files
 * README.md -- The self explanatory file you read now.
-* lg_v30-h932-Stable.xml -- Manifest for building from the last known working build of LineageOS 16.0 FOR T-MOBILE H932 VARIANT ONLY. Code is provided from their respective GitHub sources listed in the file.
-* lg_v30-h930-Stable.xml -- Manifest for building from the last known working build of LineageOS 16.0 UNIVERSAL BUILD EXECPT FOR T-MOBILE H932. Code is provided from their respective GitHub sources listed in the file.
-* lg_v30-h930.xml -- Manifest for building from my source edits UNIVERSAL BUILD EXCEPT FOR T-MOBILE H932.
-* lg_v30-h932.xml -- Manifest for building from my source edits FOR T-MOBILE VARIANT H932 ONLY.
+* lg_v30-h930.xml -- Manifest for building from my source edits UNIFIED BUILD.
 
 
 # Notes for me to remember, should provide clues to how to build LOS.
@@ -42,13 +39,13 @@ fi
 $ mkdir -p ~/android/lineage 
 
 $ cd ~/android/lineage  
-$ repo init -u https://github.com/LineageOS/android.git -b lineage-16.0
+$ repo init -u https://github.com/LineageOS/android.git -b lineage-17.1
 
 ### Now add the LG v30 manifest. Pick whether or not to use the stable manifest or not. MAKE SURE TO USE THE CORRECT MANIFEST! H932 is a T-Mobile specific build. H930 is universal and will work for other LG v30. 
 ### Change directory to point to .repo   folder of the source directory.
 #### Make sure to point to the .repo folder inside of the build root location you choose earlier!
 $ mkdir -p ~/android/lineage/.repo/local_manifests  
-$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30-h930-Stable.xml -O ~/android/lineage/.repo/local_manifests/lg_v30-h930-Stable.xml
+$ wget -S https://raw.githubusercontent.com/ShapeShifter499/LG_v30-LineageOS_Manifest/lineage-16.0/lg_v30-joan.xml -O ~/android/lineage/.repo/local_manifests/lg_v30-joan.xml
 
 ### Now grab all the source files! Run at the root of the source directory.
 $ repo sync
@@ -86,7 +83,7 @@ $ mka clobber
 
 ### Now build! Run commands at root of source.
 #### Swap the next line for lineage_h932-userdebug if compiling for T-Mobile H932, otherwise all other devices use H930
-$ lunch lineage_h930-userdebug
+$ lunch lineage_joan-userdebug
 $ mka bacon
 
 #### To build just the boot.img
