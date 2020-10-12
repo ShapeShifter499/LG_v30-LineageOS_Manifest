@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0"/>
-  <project name="ShapeShifter499/android_kernel_lge_msm8998" path="kernel/lge/msm8998" remote="github" revision="lineage-16.0" />
+  <project name="ShapeShifter499/android_kernel_lge_msm8998" path="kernel/lge/msm8998" remote="github" revision="lineage-17.1" />
   <project name="ShapeShifter499/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-16.0_pie" />
   <project name="ShapeShifter499/android_device_lge_joan" path="device/lge/joan" remote="github" revision="lineage-16.0_pie" />
   <project name="ShapeShifter499/android_device_lge_common" path="device/lge/common" remote="github" revision="lineage-16.0_pie"/>
